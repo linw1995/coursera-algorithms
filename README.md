@@ -31,7 +31,7 @@ mvn exec:java \
 ### Test
 
 ```shell
-mvn surefire:test
+mvn test
 ```
 
 ### Checkstyle
