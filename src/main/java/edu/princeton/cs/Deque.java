@@ -37,16 +37,12 @@ public class Deque<Item> implements Iterable<Item> {
     Item[] newArr = (Item[]) new Object[capacity];
 
     if (this.endIdx > this.beginIdx) {
-      for (int i = this.beginIdx; i < this.endIdx; i++) {
-        newArr[i - this.beginIdx] = this.arr[i];
-      }
+      System.arraycopy(this.arr, this.beginIdx, newArr, 0, this.size());
     } else {
-      for (int i = this.beginIdx; i < this.capacity(); i++) {
-        newArr[i - this.beginIdx] = this.arr[i];
-      }
-      for (int i = 0; i < this.endIdx; i++) {
-        newArr[i + (this.capacity() - this.beginIdx)] = this.arr[i];
-      }
+      System.arraycopy(this.arr, this.beginIdx, newArr, 0,
+                       this.capacity() - this.beginIdx);
+      System.arraycopy(this.arr, 0, newArr, this.capacity() - this.beginIdx,
+                       this.endIdx);
     }
 
     this.endIdx = this.size();
