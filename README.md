@@ -43,9 +43,9 @@ mvn checkstyle:check
 will output
 
 ```plain
-[INFO] --- maven-checkstyle-plugin:3.0.0:check (default-cli) @ linw1995 ---
-[INFO] There are 3 errors reported by Checkstyle 8.16 with /Users/linw1995/Documents/me/linw1995/src/main/resources/checkstyle-coursera.xml ruleset.
-[ERROR] ../../../../../src/main/java/com/linw1995/algorithms/Permutation.java:[1,1] (coding) IllegalToken: Do not define packages in this course. You must use the default (no-name) package in this course.
-[ERROR] ../../../../../src/main/java/com/linw1995/algorithms/Deque.java:[1,1] (coding) IllegalToken: Do not define packages in this course. You must use the default (no-name) package in this course.
-[ERROR] ../../../../../src/main/java/com/linw1995/algorithms/RandomizedQueue.java:[1,1] (coding) IllegalToken: Do not define packages in this course. You must use the default (no-name) package in this course.
+...
+[ERROR] ../../../../../src/main/java/edu/princeton/cs/Permutation.java:[1,1] (coding) IllegalToken: Do not define packages in this course. You must use the default (no-name) package in this course.
+[ERROR] ../../../../../src/main/java/edu/princeton/cs/Deque.java:[1,1] (coding) IllegalToken: Do not define packages in this course. You must use the default (no-name) package in this course.
+[ERROR] ../../../../../src/main/java/edu/princeton/cs/RandomizedQueue.java:[1,1] (coding) IllegalToken: Do not define packages in this course. You must use the default (no-name) package in this course.
+...
 ```
